@@ -16,10 +16,15 @@ header {
     background-size: cover;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
 /* --------------- Barre de nav --------------- */
 
 .navbar {
-    position: absolute;
+    position: sticky;
+    top: 0;
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -60,6 +65,17 @@ header {
 /* --------------- Bloc presentation --------------- */
 
 
+.presentation p {
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    padding: 35px;  
+}
+
+
+
+/* --------------- Media Queries --------------- */
 @media  screen and (max-width: 900px) {
     .navbar {
         padding: 0;
