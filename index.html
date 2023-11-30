@@ -4,8 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardon Vincent</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
+    <nav class="navbar">
+      <a href="#" class="logo">Vincent Cardon</a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#">Acceuil</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <img src="style/menu-btn.png" alt="menu bouton" class="menu-btn">
+    </nav>
+    <header></header>
+
+    <section class="presentation">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione minus sequi saepe iusto dolorem aut atque explicabo totam animi cum.</p>
+    </section>
+      
+
 </body>
+
+
+
+
+
+
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-btn")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
 </html>
