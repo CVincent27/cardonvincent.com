@@ -13,33 +13,79 @@
         <a href="#" class="logo">Vincent Cardon</a>
         <div class="nav-links">
           <ul>
-            <li class="active"><a href="#">Acceuil</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="nav-title"><a href="#">Acceuil</a></li>
+            <li class="nav-title"><a href="#cv">CV</a></li>
+            <li class="nav-title"><a href="#">Contact</a></li>
           </ul>
         </div>
         <img src="style/menu-btn.png" alt="menu bouton" class="menu-btn">
       </nav>
 
-      <div class="presentation">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Suscipit quaerat ad maxime corporis ipsam beatae assumenda illo inventore odit 
-          temporibus. Dolores in deserunt accusantium alias. Iste accusamus nesciunt veniam 
-          dolores.
-        </p>
-      </div>
+      <section class="presentation-box">
+        <div class="presentation-text">
+          <p>Actuellement en cours de formation intégrateur web chez Openclassrooms, je 
+            suis à la recherche d'une alternance afin de débuter début septembre la formation 
+            Développeur d'application Python (bac +3/4)
+          </p>
+        </div>
+      </section>
     </div>
   </header>
- 
+<div class="flex">
+  <section class="cv-box" id="#cv">
+    <div class="cv-title-box">
+      <h2 class="cv-title">Mon CV</h2>
+      <div class="cv-dl">
+        <a id="downloadLink" href="#">Télecharger mon CV</a>
+      </div>
+      <div class="skill-box">
+        <div class="skill-content">
+          <ul class="skill-grid">
+            <a class="skill-logo">
+              <img class="skill-img" src="./style/html.png" alt="HTML logo">
+              <p>HTML</p>
+            </a>
+            <a class="skill-logo">
+              <img class="skill-img" src="./style/css.png" alt="CSS logo">
+              <p>CSS</p>
+            </a>
+            <a class="skill-logo">
+              <img class="skill-img" src="./style/js.png" alt="Javascript logo">
+              <p>Javascript</p>
+            </a>
+            <a class="skill-logo">
+              <img class="skill-img" src="./style/nodeJS.png" alt="NodeJS logo">
+              <p>NodeJS</p>
+            </a>
+            <a class="skill-logo">
+              <img class="skill-img" src="./style/python.png" alt="Python logo">
+              <p>Python</p>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="project-box" id="#projet">
+    <div class="project-title-box">
+      <h2 class="project-title">Mes Projets</h2>
+      
+    </div>
+
+  </section>
+</div>
+<script src="cv.js"></script>
 
 </body>
 
-  <script>
-    const menuHamburger = document.querySelector(".menu-btn")
-    const navLinks = document.querySelector(".nav-links")
+<script>
+  const menuHamburger = document.querySelector(".menu-btn")
+  const navLinks = document.querySelector(".nav-links")
 
-    menuHamburger.addEventListener('click',()=>{
-      navLinks.classList.toggle('mobile-menu')
-    })
-  </script>
+  menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+  })
+</script>
 </html>

@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Cascadia Code';
+    background-image: url(../style/background.jpg);
+    background-size: cover;
 }
 
 header {
     height: 100vh ;
-    width: 100vw;
-    background-image: url(../style/background.jpg);
-    background-size: cover;
+
 }
 
 .content {
@@ -49,8 +49,9 @@ header {
 .navbar .nav-links ul li {
     margin: 0 25px;
 }
-.navbar .nav-links ul li.active a {
-    color: rgb(14, 33, 201);
+
+.navbar .nav-links ul li:hover a {
+    color: blue;
     font-weight: 600;
 }
 
@@ -64,16 +65,125 @@ header {
 
 /* --------------- Bloc presentation --------------- */
 
-
-.presentation p {
+.presentation-box{
+    width: 100%;
+}
+.presentation-text {
     color: white;
     position: absolute;
     top: 0;
-    margin-top: 100px;
+    margin-top: 8rem;
     padding: 35px;  
 }
 
+/* --------------- Bloc CV --------------- */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
 
+
+.cv-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 16rem;
+    align-items: center;
+}
+
+.cv-title-box {
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    color: white;
+    position: absolute;
+    border: 0.5rem groove;
+    border-radius: 30px;
+    border-color: white;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.cv-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cv-dl {
+    display: inline-block;
+    color: white;
+    margin-top: 1rem;
+
+}
+
+.cv-dl a {
+    color: white;
+}
+
+.cv-dl a:hover {
+    color: black;
+}
+
+.skill-box {
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.skill-content {
+    display: flex;
+    width: 100%;
+
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+
+.skill-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+/* --------------- Bloc Project --------------- */
+
+.project-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 58rem;
+}
+
+.project-title-box {
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+    flex-direction: column;
+    width: 85%;
+    color: white;
+    position: absolute;
+    border: 0.5rem groove;
+    border-radius: 30px;
+    border-color: white;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.project-title {
+    font-size: 2em;
+    font-weight: bold;
+}
 
 /* --------------- Media Queries --------------- */
 @media  screen and (max-width: 900px) {
@@ -103,6 +213,11 @@ header {
         justify-content: center;
         align-items: center;
         margin-left: -100%;
+    }
+
+    .presentation-box {
+        color: blue;
+        padding: 0;
     }
 
     .mobile-menu {
