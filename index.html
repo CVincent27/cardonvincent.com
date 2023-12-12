@@ -10,12 +10,15 @@
   <header>
     <div class="content">
       <nav class="navbar">
-        <a href="#" class="logo">Vincent Cardon</a>
+        <div class="box-logo">
+          <img class="img-logo" src="/style/logo_img.png" alt="">
+          <a href="#" class="logo">Vincent Cardon</a>
+        </div>
         <div class="nav-links">
           <ul>
             <li class="nav-title"><a href="#">Acceuil</a></li>
-            <li class="nav-title"><a href="#cv">CV</a></li>
-            <li class="nav-title"><a href="#">Contact</a></li>
+            <li><a href="#" onclick="scrollToSection('cv')">CV</a></li>
+            <li class="nav-title"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <img src="style/menu-btn.png" alt="menu bouton" class="menu-btn">
@@ -32,7 +35,7 @@
     </div>
   </header>
 <div class="flex">
-  <section class="cv-box" id="#cv">
+  <section class="cv-box" id="cv">
     <div class="cv-title-box">
       <h2 class="cv-title">Mon CV</h2>
       <div class="cv-dl">
@@ -71,21 +74,17 @@
   <section class="project-box" id="#projet">
     <div class="project-title-box">
       <h2 class="project-title">Mes Projets</h2>
-      
+      <div class="github-profile" id="github-profile"></div>
     </div>
+    
 
   </section>
 </div>
-<script src="cv.js"></script>
+<script src="/js/cv.js"></script>
+<script src="/js/scrollToSection.js"></script>
+<script src="/js/githubWidget.js"></script>
+<script src="/js/menuHamburger.js"></script>
 
 </body>
 
-<script>
-  const menuHamburger = document.querySelector(".menu-btn")
-  const navLinks = document.querySelector(".nav-links")
-
-  menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-  })
-</script>
 </html>
