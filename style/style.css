@@ -164,6 +164,7 @@ header {
 }
 
 /* --------------- Bloc Project --------------- */
+/* Test avec grid */
 
 .project-box {
     height: auto;
@@ -200,7 +201,11 @@ header {
     flex-direction: column;
 }
 
-/* --------------- Formulaire --------------- */
+.project-display {
+    display: flex;
+}
+
+/* --------------- Page Formulaire --------------- */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -230,7 +235,7 @@ textarea {
 
 button {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #006495;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -238,7 +243,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0a6c9c;
 }
 /* --------------- Media Queries --------------- */
 
