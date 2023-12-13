@@ -34,60 +34,100 @@
       </section>
     </div>
   </header>
-<div class="flex">
-  <section class="cv-box" id="cv">
-    <div class="cv-title-box">
-      <h2 class="cv-title">Mon CV</h2>
-      <div class="cv-dl">
-        <a id="downloadLink" href="#">Télecharger mon CV</a>
-      </div>
-      <div class="skill-box">
-        <div class="skill-content">
-          <ul class="skill-grid">
-            <a class="skill-logo">
-              <img class="skill-img" src="./style/html.png" alt="HTML logo">
-              <p>HTML</p>
-            </a>
-            <a class="skill-logo">
-              <img class="skill-img" src="./style/css.png" alt="CSS logo">
-              <p>CSS</p>
-            </a>
-            <a class="skill-logo">
-              <img class="skill-img" src="./style/js.png" alt="Javascript logo">
-              <p>Javascript</p>
-            </a>
-            <a class="skill-logo">
-              <img class="skill-img" src="./style/nodeJS.png" alt="NodeJS logo">
-              <p>NodeJS</p>
-            </a>
-            <a class="skill-logo">
-              <img class="skill-img" src="./style/python.png" alt="Python logo">
-              <p>Python</p>
-            </a>
-          </ul>
+
+  <main class="flex">
+    <section class="cv-box" id="cv">
+      <div class="cv-title-box">
+        <h2 class="cv-title">Mon CV</h2>
+        <div class="cv-dl">
+          <a id="downloadLink" href="#">Télecharger mon CV</a>
+        </div>
+        <div class="skill-box">
+          <div class="skill-content">
+            <ul class="skill-grid">
+              <a class="skill-logo">
+                <img class="skill-img" src="./style/html.png" alt="HTML logo">
+                <p>HTML</p>
+              </a>
+              <a class="skill-logo">
+                <img class="skill-img" src="./style/css.png" alt="CSS logo">
+                <p>CSS</p>
+              </a>
+              <a class="skill-logo">
+                <img class="skill-img" src="./style/js.png" alt="Javascript logo">
+                <p>Javascript</p>
+              </a>
+              <a class="skill-logo">
+                <img class="skill-img" src="./style/nodeJS.png" alt="NodeJS logo">
+                <p>NodeJS</p>
+              </a>
+              <a class="skill-logo">
+                <img class="skill-img" src="./style/python.png" alt="Python logo">
+                <p>Python</p>
+              </a>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <section class="project-box" id="#projet">
+      <div class="project-title-box">
+        <div class="project-display">
+          <h2 class="project-title">Mes Projets</h2>
+          <div class="github-profile" id="github-profile"></div>
+        </div>
 
-  <section class="project-box" id="#projet">
-    <div class="project-title-box">
-      <h2 class="project-title">Mes Projets</h2>
-      <div class="github-profile" id="github-profile"></div>
-      <div class="project-display">
-        <p>Mon site web personnel></p>
+        <div class="project-description">
+          <div class="project-card">
+            <div class="card-display">
+              <div class="project-global">
+                <a href="#" onclick="window.open(this.href); return false;">Mon site web</a>
+                <p>Mon premier site web personnel </p>
+              </div>
+              <div class="logo-skills">
+                <img class="logo-mini" src="./style/html.png" alt="">
+                <img class="logo-mini" src="./style/css.png" alt="">
+                <img class="logo-mini" src="./style/js.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="card-display">
+              <div class="project-global">
+                <a href="https://github.com/CVincent27/API_Pokedex" onclick="window.open(this.href); return false;">API Pokédex</a>
+                <p>Création d'une API avec nodeJS</p>
+              </div>
+              <div>
+                <img class="logo-mini" src="./style/js.png" alt="">
+                <img class="logo-mini" src="./style/nodejs.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="card-display">
+              <a class="project-link" href="">3eme projet</a>
+              <div>
+                <img class="logo-mini" src="./style/python.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    
+  <footer>
+    <ul>footer ici</ul>
+  </footer>
 
-  </section>
-</div>
-<script src="/js/cv.js"></script>
-<script src="/js/scrollToSection.js"></script>
-<script src="/js/githubWidget.js"></script>
-<script src="/js/menuHamburger.js"></script>
+
+
+  <script src="/js/cv.js"></script>
+  <script src="/js/scrollToSection.js"></script>
+  <script src="/js/githubWidget.js"></script>
+  <script src="/js/menuHamburger.js"></script>
 
 </body>
 

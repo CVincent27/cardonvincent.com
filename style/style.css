@@ -6,9 +6,13 @@
 }
 
 body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     font-family: 'Cascadia Code';
     background-image: url(../style/background.jpg);
     background-size: cover;
+    min-height: 100vh;
 }
 
 header {
@@ -165,7 +169,6 @@ header {
 
 /* --------------- Bloc Project --------------- */
 /* Test avec grid */
-
 .project-box {
     height: auto;
     display: flex;
@@ -176,12 +179,10 @@ header {
     top: 58rem;
 }
 
+
 .project-title-box {
-    display: flex;
     padding: 50px;
     gap: 10px;
-    flex-direction: row;
-    justify-content: space-between;
     width: 85%;
     color: white;
     position: absolute;
@@ -191,6 +192,14 @@ header {
     background-color: rgba(255,255,255,0.5);
 }
 
+.project-display {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 .project-title {
     font-size: 2em;
     font-weight: bold;
@@ -199,17 +208,62 @@ header {
 .github-profile{
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
-.project-display {
+.project-description {
     display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    padding: 20px;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    border: solid;
+}
+
+.project-card:hover {
+    transition-duration: 0.5s;
+    background-color: whitesmoke;
+    color: #143395;
+}
+
+
+
+.card-display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-global {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link {
+    font-size: 20px;
+    height: 20px;
+    color: #143395;
+}
+
+.logo-skills {
+    display: flex;
+}
+
+.logo-mini {
+    width: 40px;
+    height: 40px;
 }
 
 /* --------------- Page Formulaire --------------- */
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -245,6 +299,14 @@ button {
 button:hover {
     background-color: #0a6c9c;
 }
+
+/* --------------- Footer --------------- */
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+}
+
 /* --------------- Media Queries --------------- */
 
 @media  screen and (max-width: 900px) {
