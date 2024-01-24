@@ -38,7 +38,7 @@ body {
     align-items: center;
 }
 
-.navbar img {
+.img-logo {
     width: 10%;
 }
 
@@ -289,11 +289,25 @@ button:hover {
 
 /* --------------- Footer --------------- */
 footer {
+    display: flex;
+    align-items: center;
     margin: 50px 0 0;
     padding: 20px;
-    background-color: red;
+    background-color: #0a6c9c;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.img-logo-contact {
+    width: 20%;
+}
+
+.footer-content {
+    width: 33%;
+}
 /* --------------- Media Queries --------------- */
 
 @media screen and (max-width: 900px) {
