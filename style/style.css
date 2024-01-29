@@ -5,10 +5,14 @@
     list-style: none;
 }
 
+html {
+    margin:    0 auto;
+    max-width: 1440px;
+}
+
 body {
     font-family: 'Cascadia Code';
-    background-image: url(../style/bg_main.jpg);
-    background-size: contain;
+    background: rgb(2,0,36);
 
 }
 
@@ -109,7 +113,7 @@ body {
     border: 0.5rem groove;
     border-radius: 30px;
     border-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .cv-title {
@@ -178,7 +182,7 @@ body {
     border: 0.5rem groove;
     border-radius: 30px;
     border-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .project-display {
@@ -252,7 +256,7 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -291,6 +295,7 @@ button:hover {
 
 /* --------------- Footer --------------- */
 footer {
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     margin: 50px 0 0;
