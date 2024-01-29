@@ -7,14 +7,16 @@
 
 body {
     font-family: 'Cascadia Code';
-    background-image: url(../style/background.jpg);
-    background-size: cover;
+    background-image: url(../style/bg_main.jpg);
+    background-size: contain;
+
 }
 
 /* --------------- Conteneur --------------- */
 .main_container {
     display: flex;
     flex-direction: column;
+
 }
 
 .content {
@@ -293,7 +295,6 @@ footer {
     align-items: center;
     margin: 50px 0 0;
     padding: 20px;
-    background-color: #0a6c9c;
 }
 
 .contact {
